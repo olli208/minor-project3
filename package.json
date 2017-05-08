@@ -1,0 +1,22 @@
+{
+  "name": "project-watt-now",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "ngrok": "ngrok http 5000"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "ngrok": "^2.2.6",
+    "nodemon": "^1.11.0"
+  }
+}
