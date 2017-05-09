@@ -4,6 +4,8 @@ html, body, h1 {
 }
 
 .game {
+    display: flex;
+    justify-content: space-around;
     position: relative;
     height: 95vh;
     width: 95vw;
@@ -16,7 +18,6 @@ html, body, h1 {
 }
 
 .arrow {
-    position: absolute;
     width: 5em;
     height: 5em;
 }
