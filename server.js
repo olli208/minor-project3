@@ -20,6 +20,8 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-http.listen(process.env.PORT || 5000, function (){
-    console.log('server is running: on 5000');
+var port = process.env.PORT || 5000;
+
+http.listen(port, function (){
+    console.log('server is running: on ' + port);
 });
