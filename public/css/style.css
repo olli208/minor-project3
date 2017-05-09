@@ -1,4 +1,36 @@
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    position: relative;
+    height: 95vh;
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    background: #E9EAEC;
+    box-shadow:  10px  10px 10px #B2C9D6;
+    border-radius: 0 0 10px 10px;
+}
+
 .arrow {
-    fill: #666;
-    width: 100%;
+    position: absolute;
+    width: 5em;
+    height: 5em;
+}
+
+.arrow_down {
+    fill: #F12D4B;
+}
+
+.arrow_up {
+    fill: #00ABEB;
+}
+.arrow_left {
+    fill: #27C86A;
+}
+.arrow_right {
+    fill: #F2C610;
 }
