@@ -4,7 +4,7 @@
 ## Installation
 ### Clone
 ```
-git clone https://github.com/olli208/minor-project3.git && minor-project3
+git clone https://github.com/olli208/minor-project3.git && cd minor-project3
 ```
 
 ### Install dependencies
