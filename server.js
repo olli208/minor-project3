@@ -7,8 +7,8 @@ var request = require('request');
 var compression  = require('compression');
 
 app.use(compression({
-        threshold: 0,
-        filter: () => true,// Compress all assets by default
+  threshold: 0,
+  filter: () => true,// Compress all assets by default
 }));
 
 // socket.io
@@ -29,5 +29,5 @@ app.get('/', function(req, res) {
 
 var port = process.env.PORT || 5000;
 http.listen(port, function (){
-    console.log('server is running: on ' + port);
+  console.log('server is running: on ' + port);
 });
