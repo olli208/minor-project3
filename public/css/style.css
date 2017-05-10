@@ -24,9 +24,21 @@ body {
   border-radius: 10px;
 }
 
+.controlls {
+  position: absolute;
+  bottom: 0;
+}
+
 .arrow {
   width: 5em;
   height: 5em;
+  margin-left: 2em;
+  border: 2px solid #6f6262;
+  border-radius: 50%;
+}
+
+.arrow:first-child {
+  margin: 0;
 }
 
 .arrow-vert {
