@@ -27,12 +27,9 @@ function progressFill(e){
 // elke stap gaat de progressbar omhoog met 15
 // degene die het eerste bij een bepaald score komt wint de game.
 
-// /* Animate all divs at once. */
-// Velocity(leftArrow, { translateY: '80vh' }, 3000);
 
 // 'notes' to store Arrows
 var notes = [];
-
 
 // ==== CLASS FOR ARROWS ==== //
 
@@ -144,7 +141,7 @@ function render() {
 }// ends render()
 
 // jQuery to animate arrows //
-$(document).click(function () {
+$('.message').click(function () {
   // shim layer with setTimeout fallback
   window.requestAnimFrame = (function() {
     return window.requestAnimationFrame ||
