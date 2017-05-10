@@ -27,31 +27,33 @@ function Arrow(direction) {
 
   switch(direction) {
 
-    case "left" : xPos = "115px";
+    case "left" : xPos = "0px";
     break;
 
-    case "up" : xPos = "182";
+    case "up" : xPos = "120px";
     break;
 
-    case "down" : xPos = "252px";
+    case "down" : xPos = "240px";
     break;
 
-    case "right" : xPos = "322px";
+    case "right" : xPos = "360px";
     break;
 
   }
 
   this.direction = direction;
-  this.image = $("<img src='public/img/" + direction + ".svg'/>");
+  this.image = $("<img src='./img/" + direction + ".svg'/>");
   this.image.css({
 
     position: "absolute",
     top: "0px",
-    left: xPos
+    left: xPos,
+    width: "5em",
+    height: "5em"
 
   });
 
-  $('.stage').append(this.image);
+  $('.game-arrow').append(this.image);
 
 }// ends CLASS Arrow
 
