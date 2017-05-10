@@ -4,8 +4,22 @@ document.querySelectorAll('#outer').forEach(function(e) {
 
 function progressFill(e){
   Velocity(e.target.childNodes[3], {
-    height: '100%'
-  }, 1500);
+    height: '100%',
+    bottom: 0
+  }, {
+    duration: 1500,
+    complete: function() {
+      e.target.childNodes[1].style.color = "#fff";
+      e.target.childNodes[1].style.zIndex = '999';
+      Velocity(e.target , {
+          scale: 1.1
+        },
+        {
+          duration: 200,
+          loop: true
+        });
+    }
+  });
 }
 
 // we gaan ervan uit dat:

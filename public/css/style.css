@@ -4,10 +4,24 @@ html, body, h1 {
   font-family: 'roboto', sans-serif, helvetica;
 }
 
+h1 {
+  font-size: 5em;
+}
+
 body {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  /*align-items: center;*/
+  /*justify-content: flex-end;*/
+}
+
+.side {
+  display: flex;
+  flex-flow: wrap;
+  padding: 1em;
+}
+
+.message {
+
 }
 
 .game {
@@ -15,7 +29,7 @@ body {
   justify-content: space-around;
   position: relative;
   margin: 0.5em;
-  height: 80vh;
+  height: 90vh;
   width: 65vw;
   max-width: 100%;
   max-height: 100%;
@@ -90,6 +104,12 @@ body {
 }
 
 /* Progress bar */
+.progessbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .playername {
   font-size: 4em;
   width: 100%;
@@ -119,12 +139,6 @@ body {
 
 .player4 {
   color: #F2C610;
-}
-
-.progessbar {
-  display: flex;
-  justify-content: space-around;
-  width: 35vw;
 }
 
 .player {
