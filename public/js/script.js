@@ -12,6 +12,7 @@ function progressFill(e){
 // 15 Watts per stap
 // elke stap gaat de progressbar omhoog met 15
 // degene die het eerste bij een bepaald score komt wint de game.
+
 // /* Animate all divs at once. */
 // Velocity(leftArrow, { translateY: '80vh' }, 3000);
 
