@@ -106,7 +106,7 @@ Arrow.prototype.explode = function() {
 
 function ai() {
   for (var i = 1; i <= 3; i++) {
-    var bar = document.querySelectorAll('#outer')[i];
+    var bar = document.querySelectorAll('.outer')[i];
     progressFill(bar, (bar.filled || 0) + (Math.round(Math.random())));
   }
 }
@@ -208,7 +208,7 @@ $(document).keydown( function(event) {
     }
 
     if (hit) {
-      var bar = document.querySelectorAll('#outer')[0];
+      var bar = document.querySelectorAll('.outer')[0];
       notes[i].explode();
 
       progressFill(bar, (bar.filled || 0) + 1);
