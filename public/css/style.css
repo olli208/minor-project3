@@ -1,20 +1,27 @@
 html, body, h1 {
     margin: 0;
     padding: 0;
+    font-family: 'roboto', sans-serif, helvetica;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .game {
     display: flex;
     justify-content: space-around;
     position: relative;
-    height: 95vh;
-    width: 95vw;
-    margin: 0 auto;
+    margin: 0.5em;
+    height: 80vh;
+    width: 65vw;
     max-width: 100%;
     max-height: 100%;
     background: #E9EAEC;
     box-shadow:  10px  10px 10px #B2C9D6;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 }
 
 .arrow {
@@ -22,16 +29,131 @@ html, body, h1 {
     height: 5em;
 }
 
-.arrow_down {
-    fill: #F12D4B;
+.arrow-vert {
+    fill: hotpink;
 }
 
-.arrow_up {
-    fill: #00ABEB;
+.arrow-hori {
+    fill: skyblue;
 }
-.arrow_left {
-    fill: #27C86A;
+
+.arrow-right {
+
 }
-.arrow_right {
-    fill: #F2C610;
+
+.arrow-left {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.arrow-up {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.arrow-down {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/* Progress bar */
+.playername {
+    font-size: 4em;
+    width: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    hyphens: none;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.player1 {
+    color: #F12D4B;
+}
+
+.player2 {
+    color: #00ABEB;
+}
+
+.player3 {
+    color: #27C86A;
+}
+
+.player4 {
+    color: #F2C610;
+}
+
+.progessbar {
+    display: flex;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+.player {
+    display: inline-block;
+}
+
+#outer {
+    width: 2.5em;
+    height: 60vh;
+    /*border: 2px solid #ccc;*/
+    overflow: hidden;
+    position: relative;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.player1 {
+    border: 2px solid #F12D4B;
+}
+
+.player2 {
+    border: 2px solid #00ABEB;
+}
+
+.player3 {
+    border: 2px solid #27C86A;
+}
+
+.player4 {
+    border: 2px solid #F2C610;
+}
+
+#inner, #inner div {
+    width: 100%;
+    overflow: hidden;
+    left: -2px;
+    position: absolute;
+}
+
+#inner {
+    border: 2px solid #999;
+    border-top-width: 0;
+    background-color: #999;
+
+    bottom: 0;
+    height: 0%;
+}
+
+#inner div {
+    border: 2px solid orange;
+    border-bottom-width: 0;
+    background-color: orange;
+
+    top: 0;
+    width: 100%;
+    height: 5px;
 }
