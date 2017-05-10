@@ -1,7 +1,11 @@
+// temporay to see how it looks
+// it will not work when you click
+// it is instead dependant of the game itself. Duh.
 document.querySelectorAll('#outer').forEach(function(e) {
   e.addEventListener('click' , progressFill);
 });
 
+// animate the progressbar
 function progressFill(e){
   Velocity(e.target.childNodes[3], {
     height: '100%',
