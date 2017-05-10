@@ -3,20 +3,17 @@ var upArrow = document.querySelectorAll(".arrow_left");
 var downArrow = document.querySelectorAll(".arrow_left");
 var rightArrow = document.querySelectorAll(".arrow_left");
 
-/* Animate all divs at once. */
-Velocity(
-  leftArrow, {
-    translateY: '80vh'
-  }, 3000);
-
-
 document.querySelectorAll('#outer').forEach(function(e) {
-  e.addEventListener('click' , myfunction);
+  e.addEventListener('click' , progressFill);
 });
 
-function myfunction(e){
+function progressFill(e){
   Velocity(e.target.childNodes[3], {
     height: '100%'
   }, 1500);
 }
 
+// we gaan ervan uit dat:
+// 15 Watts per stap
+// elke stap gaat de progressbar omhoog met 15
+// degene die het eerste bij een bepaald score komt wint de game.
