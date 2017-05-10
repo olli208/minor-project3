@@ -22,7 +22,7 @@ With the current information about the usage of energy, what other information d
 
 * Visitors: They want to have a good time on the festival. It’s important for them to know how sustainable the festival is.
 
-![alt text](https://github.com/olli208/minor-project3/blob/master/docs/scheme-cyclus.png)
+![alt text](https://github.com/olli208/minor-project3/blob/master/docs/cyclus.png)
 *Cyclus stakeholders*
 
 ## Input output
