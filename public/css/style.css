@@ -24,9 +24,24 @@ body {
   border-radius: 10px;
 }
 
+.game-arrow {
+  width: 440px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .controlls {
   position: absolute;
   bottom: 0;
+  display: flex;
+  width: 440px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.controlls img {
+  width: 5em;
+  height: 5em;
 }
 
 .arrow {
