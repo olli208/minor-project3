@@ -235,4 +235,3 @@ $(document).keydown( function(event) {
   }// ends loop
 
 });// ends $(doc).keyup
-
