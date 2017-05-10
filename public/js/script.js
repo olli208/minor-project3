@@ -175,7 +175,7 @@ function render() {
 
 
 // jQuery to animate arrows //
-$(document).ready(function () {
+$(document).click(function () {
 
   // shim layer with setTimeout fallback
   window.requestAnimFrame = (function() {
