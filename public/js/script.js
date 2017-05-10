@@ -83,7 +83,6 @@ function Arrow(direction) {
 Arrow.prototype.step = function() {
   // Controls the speed of the arrows
   this.image.css("top", "+=4px");
-
 };
 
 // Deletes arrows when they get to bottom of page
