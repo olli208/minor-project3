@@ -13,8 +13,14 @@ The saved cost on the generators is going to be used to pay for the consumption 
 ![Dancing platform](https://github.com/olli208/minor-project3/blob/master/images/dance-directions.gif "Dancing platform")
 
 ## Use case
+With the current information about the usage of energy, what other information do you need to inform and to present, so the users can do something to reduce the usage of energy?  
 
 ## Stakeholders
+* Festival organizers: They want to know how much energy is used by every team. The second thing they care about is how efficient they are and when teams are peaking in energy usage.
+
+* Watt-now: This team wants to create insight in how sustainable the festival is and how they can improve the sustainability by advising the organization.
+
+* Visitors: They want to have a good time on the festival. It’s important for them to know how sustainable the festival is.
 
 ## Input output
 
