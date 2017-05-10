@@ -244,4 +244,3 @@ $(document).keydown( function(event) {
   }// ends loop
 
 });// ends $(doc).keyup
->>>>>>> 145eade22124568c1b3d53eda2340e76ec220d31
