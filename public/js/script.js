@@ -1,36 +1,36 @@
-// temporay to see how it looks
-// it will not work when you click
-// it is instead dependant of the game itself. Duh.
-document.querySelectorAll('#outer').forEach(function(e) {
-  e.addEventListener('click' , progressFill);
-});
+var max = 20;
 
 // animate the progressbar
-function progressFill(e){
-  Velocity(e.target.childNodes[3], {
-    height: '100%',
+function progressFill(target, to){
+  if (target.filled == max) {
+    return;
+  }
+
+  target.filled = to;
+
+  to = Math.min(max, to);
+  to = to * (100 / max);
+
+  Velocity(target.childNodes[3], {
+    height: to+'%',
     bottom: 0
   }, {
-    duration: 1500,
+    duration: 300,
     complete: function() {
-      e.target.childNodes[1].style.color = "#fff";
-      e.target.childNodes[1].style.zIndex = '999';
-      Velocity(e.target , {
+      target.childNodes[1].style.color = "#fff";
+      target.childNodes[1].style.zIndex = '999';
+      if (to == 100) {
+        Velocity(target, {
           scale: 1.1
         },
         {
           duration: 200,
           loop: true
         });
+      }
     }
   });
 }
-
-// we gaan ervan uit dat:
-// 15 Watts per stap
-// elke stap gaat de progressbar omhoog met 15
-// degene die het eerste bij een bepaald score komt wint de game.
-
 
 // 'notes' to store Arrows
 var notes = [];
@@ -93,12 +93,23 @@ Arrow.prototype.destroy = function() {
   // Removes the note/arrow from memory/array
   notes.splice(0,1);
 
+  ai();
+
 };
 
 // Explodes arrow when hit
 Arrow.prototype.explode = function() {
   this.image.remove();
+
+  ai();
 };
+
+function ai() {
+  for (var i = 1; i <= 3; i++) {
+    var bar = document.querySelectorAll('#outer')[i];
+    progressFill(bar, (bar.filled || 0) + (Math.round(Math.random())));
+  }
+}
 
 // For random arrows
 var randNum = 0;
@@ -173,27 +184,34 @@ $('.message').click(function () {
 // Listening for when the key is pressed
 $(document).keydown( function(event) {
   for (var i = 0; i < notes.length; i++) {
-      console.log(notes[i].image.position().top);
+    var hit = false;
 
     if (event.keyCode == 37 && notes[i].direction == "left") {
       if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
-        console.log("LEFT! "+notes[i].explode());
+        hit = true;
       }
     }
     if (event.keyCode == 38 && notes[i].direction == "up") {
       if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
-        console.log("UP! "+notes[i].explode());
+        hit = true;
       }
     }
     if (event.keyCode == 40 && notes[i].direction == "down") {
       if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
-        console.log("DOWN! "+notes[i].explode());
+        hit = true;
       }
     }
     if (event.keyCode == 39 && notes[i].direction == "right") {
       if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
-        console.log("RIGHT! "+notes[i].explode());
+        hit = true;
       }
+    }
+
+    if (hit) {
+      var bar = document.querySelectorAll('#outer')[0];
+      notes[i].explode();
+
+      progressFill(bar, (bar.filled || 0) + 1);
     }
 
   }// ends loop
