@@ -39,7 +39,7 @@ With the current information about the usage of energy, what other information d
 
 ### Clone
 ```
-git clone https://github.com/olli208/minor-project3.git && cd gminor-project3
+git clone https://github.com/olli208/minor-project3.git
 ```
 
 ### Install dependencies
