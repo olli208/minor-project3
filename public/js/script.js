@@ -120,7 +120,7 @@ var randNum = 0;
 var frame = 0;
 
 // Determines the speed of notes
-var arrowSpawnRate = 40;
+var arrowSpawnRate = 60;
 
 // Random generator for arrows
 function randomGen() {
