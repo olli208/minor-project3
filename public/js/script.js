@@ -19,7 +19,9 @@ function progressFill(target, to){
     complete: function() {
       target.childNodes[1].style.color = "#fff";
       target.childNodes[1].style.zIndex = '999';
-      if (to == 100) {
+
+      if (to === 100) {
+        document.querySelector('.messagewin').classList.remove('hide');
         Velocity(target, {
           scale: 1.1
         },
