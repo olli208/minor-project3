@@ -189,22 +189,22 @@ $(document).keydown( function(event) {
     var hit = false;
 
     if (event.keyCode == 65 && notes[i].direction == "left") {
-      if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
+      if (notes[i].image.position().top > 400 && notes[i].image.position().top < 600) {
         hit = true;
       }
     }
     if (event.keyCode == 87 && notes[i].direction == "up") {
-      if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
+      if (notes[i].image.position().top > 400 && notes[i].image.position().top < 600) {
         hit = true;
       }
     }
     if (event.keyCode == 83 && notes[i].direction == "down") {
-      if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
+      if (notes[i].image.position().top > 400 && notes[i].image.position().top < 600) {
         hit = true;
       }
     }
     if (event.keyCode == 68 && notes[i].direction == "right") {
-      if (notes[i].image.position().top > 490 && notes[i].image.position().top < 530) {
+      if (notes[i].image.position().top > 400 && notes[i].image.position().top < 600) {
         hit = true;
       }
     }
