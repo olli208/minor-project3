@@ -15,7 +15,7 @@ The saved cost on the generators is going to be used to pay for the consumption 
 ## Research
 
 ### Pavegen
-Pavegen generates energy from footsteps by tiles which make it possible to produce energy by walking/standing on it. One step produces `7 watt` energy, equal to `22 seconds light`. If ten tiles of Pavegen will use the whole day by walking people, it will have enough energy to light up a streetlight. The electricity can be used to power appliances directly, or stored for later use. They are rainproof, working underwater at a depth of 1.5m. 
+Pavegen generates energy from footsteps by tiles which make it possible to produce energy by walking/standing on it. One step produces `7 watt` energy, equal to `22 seconds light`. If ten tiles of Pavegen will use the whole day by walking people, it will have enough energy to light up a streetlight. The electricity can be used to power appliances directly, or stored for later use. They are rainproof, working underwater at a depth of 1.5m.
 
 ![alt text](https://github.com/olli208/minor-project3/blob/master/docs/scheme-pavegen.png)
 
@@ -41,6 +41,7 @@ Pavegen was deployed to charge mobile phones by dancing/jumping on the tiles dur
 ##### Source
 - https://www.youtube.com/watch?v=VD15-2Uriyc
 - http://pwc.blogs.com/fast_growth_companies/2016/01/we-meet-ceo-and-founder-of-pavegen-a-tech-company-that-creates-flooring-that-harnesses-the-energy-of.html
+- https://www.thegreenage.co.uk/pavegen-footsteps-renewable-energy/
 
 The possibilities are available with this new way of sustainable. Ofcourse, more research en experiments will develop this technique in the future. The expectation is that this will develop more and more the coming years.
 
