@@ -141,7 +141,7 @@ body {
   display: inline-block;
 }
 
-#outer {
+.outer {
   width: 2.5em;
   height: 60vh;
   overflow: hidden;
@@ -168,37 +168,40 @@ body {
   border: 2px solid #F2C610;
 }
 
-#inner, #inner div {
+.inner, .inner div {
   width: 100%;
   overflow: hidden;
   left: -2px;
   position: absolute;
 }
 
-#inner {
-  border: 2px solid #999;
+.inner {
   border-top-width: 0;
   bottom: 0;
   height: 0%;
 }
 
-.player1 #inner {
+.player1 .inner {
+  border: 2px solid #F12D4B;
   background: #F12D4B;
 }
 
-.player2 #inner {
+.player2 .inner {
+  border: 2px solid #00ABEB;
   background: #00ABEB;
 }
 
-.player3 #inner {
+.player3 .inner {
+  border: 2px solid #27C86A;
   background: #27C86A;
 }
 
-.player4 #inner {
+.player4 .inner {
+  border: 2px solid #F2C610;
   background: #F2C610;
 }
 
-#inner div {
+.inner div {
   border-bottom-width: 0;
   top: 0;
   width: 100%;
