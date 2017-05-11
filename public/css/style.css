@@ -211,3 +211,12 @@ body {
 .hide {
   opacity: 0;
 }
+
+.logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 4em;
+  margin-right: 2.5em;
+  margin-bottom: 2em;
+}
