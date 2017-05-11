@@ -12,6 +12,39 @@ The saved cost on the generators is going to be used to pay for the consumption 
 
 ![Dancing platform](https://github.com/olli208/minor-project3/blob/master/images/dance-directions.gif "Dancing platform")
 
+## Research
+
+### Pavegen
+Pavegen generates energy from footsteps by tiles which make it possible to produce energy by walking/standing on it. One step produces `7 watt` energy, equal to `22 seconds light`. If ten tiles of Pavegen will use the whole day by walking people, it will have enough energy to light up a streetlight. The electricity can be used to power appliances directly, or stored for later use. They are rainproof, working underwater at a depth of 1.5m.
+
+![alt text](https://github.com/olli208/minor-project3/blob/master/docs/scheme-pavegen.png)
+
+Pavegen produces two things:
+- energy
+- data
+
+The `energy` can be use for electricity and `data` can be use for analyzing by retailers, government etc.
+
+#### Example projects
+There is an example of Pavegen that makes it possible to produce energy for the light piles of a football field in Brazil during a football game.
+
+Pavegen was deployed to charge mobile phones by dancing/jumping on the tiles during a festival. It has resulted in 1000 charged mobile phones during the three days festival.
+
+**More example of use**
+- Airport
+- Busy transport sides
+- Shopping centres
+- Concert venues
+- Sportgrounds
+- Next: (car)roads
+
+##### Source
+- https://www.youtube.com/watch?v=VD15-2Uriyc
+- http://pwc.blogs.com/fast_growth_companies/2016/01/we-meet-ceo-and-founder-of-pavegen-a-tech-company-that-creates-flooring-that-harnesses-the-energy-of.html
+- https://www.thegreenage.co.uk/pavegen-footsteps-renewable-energy/
+
+The possibilities are available with this new way of sustainable. Ofcourse, more research en experiments will develop this technique in the future. The expectation is that this will develop more and more the coming years.
+
 ## Use case
 With the current information about the usage of energy, what other information do you need to inform and to present, so the users can do something to reduce the usage of energy?  
 
