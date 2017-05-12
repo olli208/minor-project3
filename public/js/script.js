@@ -1,11 +1,11 @@
+// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
+// defines the amount of good answers the player has to get
 document.querySelector('.reload').addEventListener('click' , function(){
   location.reload();
 });
 
-// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
-
-// defines the amount of good answers the player has to get
-var max = 50;
+var max = 10;
+var winners = [];
 
 // animate the progressbar
 function progressFill(target, to){
@@ -30,6 +30,10 @@ function progressFill(target, to){
       if (to === 100) {
         document.querySelector('.messagewin').classList.remove('hide');
         document.querySelector('.lightbox').classList.remove('displaynone');
+
+        winners.push(target.childNodes[1].textContent);
+        document.querySelector('.winner').innerHTML = winners[0];
+
         Velocity(target, {
           scale: 1.1
         },
