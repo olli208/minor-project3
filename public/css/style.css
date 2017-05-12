@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-flow: wrap;
   padding: 1em;
+  width: 30%;
 }
 
 .game {
@@ -270,11 +271,17 @@ body {
   height: 100%;
 }
 
-.reload {
+button {
   border: 0;
+  border-radius: 5px;
   padding: 1em;
   background: #5C637A;
   color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 .displaynone {
