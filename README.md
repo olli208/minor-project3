@@ -89,7 +89,7 @@ npm start
 
 ## Wishlist
 - Multiple dance boards so you can battle against each other.
-- Send data to Watt-now so, they can measure they generated energy.
+- Send data to Watt-now so, they can measure the generated energy.
 - Printing the generated energy real-time.
 
 ## Sources
