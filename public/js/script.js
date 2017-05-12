@@ -1,3 +1,8 @@
+document.querySelector('.reload').addEventListener('click' , function(){
+  console.log('reloaddd');
+  location.reload();
+});
+
 var max = 50;
 
 // animate the progressbar
