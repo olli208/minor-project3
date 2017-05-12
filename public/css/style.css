@@ -12,6 +12,7 @@ h1 {
 body {
   display: flex;
   background: #060c36;
+  overflow-y: hidden;
 }
 
 .side {

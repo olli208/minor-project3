@@ -155,7 +155,7 @@ function render() {
   for (var i = notes.length - 1; i >= 0; i--) {
     notes[i].step();
     // Check for cleanup
-    if (notes[i].image.position().top > 615) {
+    if (notes[i].image.position().top > 2500) {
       notes[i].destroy();
     }
   }
