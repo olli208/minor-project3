@@ -22,6 +22,7 @@ function progressFill(target, to){
 
       if (to === 100) {
         document.querySelector('.messagewin').classList.remove('hide');
+        document.querySelector('.lightbox').classList.remove('displaynone');
         Velocity(target, {
           scale: 1.1
         },
