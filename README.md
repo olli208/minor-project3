@@ -12,6 +12,8 @@ The saved cost on the generators is going to be used to pay for the consumption 
 
 ![Dancing platform](https://github.com/olli208/minor-project3/blob/master/images/dance-directions.gif "Dancing platform")
 
+You can find the documentation on the dance board we made [here](https://github.com/olli208/minor-project3/blob/master/DANCEBOARD.md)
+
 ## Research
 
 ### Pavegen
