@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 document.querySelector('.reload').addEventListener('click' , function(){
   console.log('reloaddd');
   location.reload();
 });
 
+=======
+// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
+
+// defines the amount of good answers the player has to get
+>>>>>>> 563c141574eb7ca8cdfe98882ff33530b04439bb
 var max = 50;
 
 // animate the progressbar
@@ -73,7 +79,8 @@ function Arrow(direction) {
     top: "0px",
     left: xPos,
     width: "5em",
-    height: "5em"
+    height: "5em",
+    opacity: "0.5"
 
   });
 
@@ -118,7 +125,7 @@ var randNum = 0;
 var frame = 0;
 
 // Determines the speed of arrows
-var arrowSpawnRate = 60;
+var arrowSpawnRate = 35;
 
 // Random generator for arrows
 function randomGen() {
@@ -154,7 +161,9 @@ function render() {
   }
 
 } // ends render()
-    var audio = new Audio('/audio/music-game.mp3');
+
+// load audio file
+var audio = new Audio('/audio/music-game.mp3');
 
 // jQuery to animate arrows //
 $('.message').click(function () {
@@ -184,7 +193,6 @@ $('.message').click(function () {
   })(); // ends (function animloop() )
 }); // ends $(doc).ready
 
-
 // Listening for when the key is pressed
 $(document).keydown( function(event) {
   for (var i = 0; i < notes.length; i++) {
@@ -213,7 +221,10 @@ $(document).keydown( function(event) {
 
     if (hit) {
       var bar = document.querySelectorAll('.outer')[0];
-      notes[i].explode();
+      notes[i].image.css({
+        transform: 'scale(1.2)',
+        opacity: '1',
+      });
 
       progressFill(bar, (bar.filled || 0) + 1);
     }
