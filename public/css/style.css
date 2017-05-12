@@ -30,7 +30,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   background: #E9EAEC;
-  box-shadow:  10px  10px 10px #666;
+  box-shadow:  10px 10px 10px #666;
   border-radius: 10px;
 }
 
@@ -147,7 +147,6 @@ body {
   height: 60vh;
   overflow: hidden;
   position: relative;
-
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -222,9 +221,7 @@ body {
   margin-bottom: 2em;
 }
 
-/* Lightbox/ pop up*/
 /* LIGHTBOX SECTION*/
-
 .lightbox {
   display: flex;
   align-items: center;
@@ -253,7 +250,6 @@ body {
 }
 
 .lightbox h2, h1, p {
-  /*text-align: center;*/
   color: #6f6262;
   width: 100%;
 }
@@ -275,7 +271,6 @@ body {
 }
 
 .reload {
-  /*text-align: center;*/
   border: 0;
   padding: 1em;
   background: #5C637A;
