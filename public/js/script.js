@@ -67,7 +67,8 @@ function Arrow(direction) {
     top: "0px",
     left: xPos,
     width: "5em",
-    height: "5em"
+    height: "5em",
+    opacity: "0.5"
 
   });
 
@@ -112,7 +113,7 @@ var randNum = 0;
 var frame = 0;
 
 // Determines the speed of arrows
-var arrowSpawnRate = 60;
+var arrowSpawnRate = 35;
 
 // Random generator for arrows
 function randomGen() {
@@ -178,7 +179,6 @@ $('.message').click(function () {
   })(); // ends (function animloop() )
 }); // ends $(doc).ready
 
-
 // Listening for when the key is pressed
 $(document).keydown( function(event) {
   for (var i = 0; i < notes.length; i++) {
@@ -207,7 +207,12 @@ $(document).keydown( function(event) {
 
     if (hit) {
       var bar = document.querySelectorAll('.outer')[0];
-      notes[i].explode();
+      notes[i].image.css({
+        transform: 'scale(1.2)',
+        opacity: '1',
+        });
+
+      // notes[i].explode();
 
       progressFill(bar, (bar.filled || 0) + 1);
     }
