@@ -1,4 +1,4 @@
-var max = 20;
+var max = 50;
 
 // animate the progressbar
 function progressFill(target, to){
@@ -148,6 +148,7 @@ function render() {
   }
 
 } // ends render()
+    var audio = new Audio('/audio/music-game.mp3');
 
 // jQuery to animate arrows //
 $('.message').click(function () {
@@ -161,8 +162,11 @@ $('.message').click(function () {
       window.setTimeout(callback, 40 / 75);
 
     };
-  })();
 
+  })();
+    audio.play();
+
+    console.log(audio);
   /*  place the rAF *before* the render()
     to assure as close to 60fps with the
     setTimeout fallback.          */
