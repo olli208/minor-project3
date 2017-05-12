@@ -252,7 +252,7 @@ body {
   border-radius: 10px;
 }
 
-.lightbox h2, h1, p {
+.lightbox > h2, h1, p {
   /*text-align: center;*/
   color: #6f6262;
   width: 100%;
