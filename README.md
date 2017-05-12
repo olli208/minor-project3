@@ -91,5 +91,5 @@ npm start
 - Printing the generated energy real-time.
 
 ## Sources
-- [Soundtrack](Best Vocal Deep House  Tropical House Mix by Teison  1daytrack.com)
+- [Soundtrack](https://www.youtube.com/watch?v=YvaGYUuImCQ)
 - [Arrow game](https://github.com/derekahn/jsRevolution/blob/master/jsRev.js)
