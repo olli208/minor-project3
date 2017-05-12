@@ -4,7 +4,7 @@ document.querySelector('.reload').addEventListener('click' , function(){
   location.reload();
 });
 
-var max = 10;
+var max = 50;
 var winners = [];
 
 // animate the progressbar
