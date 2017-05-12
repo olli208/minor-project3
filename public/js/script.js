@@ -3,6 +3,7 @@ document.querySelector('.reload').addEventListener('click' , function(){
 });
 
 // Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
+
 // defines the amount of good answers the player has to get
 var max = 50;
 
