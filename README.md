@@ -86,6 +86,9 @@ npm start
 ```
 
 ## Wishlist
+- Multiple dance boards so you can battle against each other.
+- Send data to Watt-now so, they can measure they generated energy.
+- Printing the generated energy real-time.
 
 ## Sources
 - [Soundtrack](Best Vocal Deep House  Tropical House Mix by Teison  1daytrack.com)

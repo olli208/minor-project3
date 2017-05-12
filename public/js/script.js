@@ -1,14 +1,10 @@
-<<<<<<< HEAD
+// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
 document.querySelector('.reload').addEventListener('click' , function(){
   console.log('reloaddd');
   location.reload();
 });
 
-=======
-// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
-
 // defines the amount of good answers the player has to get
->>>>>>> 563c141574eb7ca8cdfe98882ff33530b04439bb
 var max = 50;
 
 // animate the progressbar
