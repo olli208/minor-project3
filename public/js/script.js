@@ -37,13 +37,6 @@ function progressFill(target, to){
 // 'notes' to store Arrows
 var notes = [];
 
-// ==== CLASS FOR ARROWS ==== //
-
-// 1. Direction of arrows
-// 2. jQuery img that links to direction bottom
-// 3. Destroy when it arrow gets to the
-// 4. Explode when arrow gets to the bottom
-
 // Class Arrow
 function Arrow(direction) {
 
@@ -80,7 +73,7 @@ function Arrow(direction) {
 
   $('.game-arrow').append(this.image);
 
-}// ends CLASS Arrow
+} // ends CLASS Arrow
 
 // To enable animating the arrows
 Arrow.prototype.step = function() {
@@ -96,7 +89,6 @@ Arrow.prototype.destroy = function() {
   notes.splice(0,1);
 
   ai();
-
 };
 
 // Explodes arrow when hit
@@ -119,7 +111,7 @@ var randNum = 0;
 // Frame increasing
 var frame = 0;
 
-// Determines the speed of notes
+// Determines the speed of arrows
 var arrowSpawnRate = 60;
 
 // Random generator for arrows
@@ -138,7 +130,7 @@ function randomGen() {
   if (randNum === 4) {
     notes.push(new Arrow("down"));
   }
-}// ends randomGen()
+} // ends randomGen()
 
 // Render function //
 function render() {
@@ -155,7 +147,7 @@ function render() {
     }
   }
 
-}// ends render()
+} // ends render()
 
 // jQuery to animate arrows //
 $('.message').click(function () {
@@ -179,8 +171,8 @@ $('.message').click(function () {
   (function animloop() {
     requestAnimFrame(animloop);
     render();
-  })();// ends (function animloop() )
-});// ends $(doc).ready
+  })(); // ends (function animloop() )
+}); // ends $(doc).ready
 
 
 // Listening for when the key is pressed
@@ -216,6 +208,6 @@ $(document).keydown( function(event) {
       progressFill(bar, (bar.filled || 0) + 1);
     }
 
-  }// ends loop
+  } // ends loop
 
-});// ends $(doc).keyup
+}); // ends $(doc).keyup
