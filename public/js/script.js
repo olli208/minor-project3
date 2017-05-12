@@ -1,3 +1,6 @@
+// Sources: https://github.com/derekahn/jsRevolution/blob/master/jsRev.js
+
+// defines the amount of good answers the player has to get
 var max = 50;
 
 // animate the progressbar
@@ -150,7 +153,9 @@ function render() {
   }
 
 } // ends render()
-    var audio = new Audio('/audio/music-game.mp3');
+
+// load audio file
+var audio = new Audio('/audio/music-game.mp3');
 
 // jQuery to animate arrows //
 $('.message').click(function () {
@@ -211,9 +216,7 @@ $(document).keydown( function(event) {
       notes[i].image.css({
         transform: 'scale(1.2)',
         opacity: '1',
-        });
-
-      // notes[i].explode();
+      });
 
       progressFill(bar, (bar.filled || 0) + 1);
     }
